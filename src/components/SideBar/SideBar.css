@@ -1,0 +1,122 @@
+.SideBar {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  float: left;
+  padding: 20px 0 10px 40px;
+  background-color: #4b20ff;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ExtendWidth {
+  width: 400px;
+}
+
+/* =======================HEADER======================= */
+.Header {
+  display: flex;
+  align-items: center;
+}
+
+.Header p {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.Header span {
+  border-bottom: 3px solid white;
+}
+
+.Header img {
+  height: 75px;
+  width: 74px;
+}
+
+/* ====================FOOTER=========================*/
+.Footer {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Contact {
+  margin: 15px 0;
+}
+
+.ContactTitle {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.ContactInfo {
+  margin-top: 5px;
+}
+
+.ContactSocialMedia {
+  margin-top: 10px;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.ContactSocialMedia a {
+  color: white;
+  font-size: 25px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+}
+
+.ContactSocialMedia .linkedin:hover {
+  color: #2877b5;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.ContactSocialMedia .facebook:hover {
+  color: #2877b5;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.ContactSocialMedia .twitter:hover {
+  color: #2877b5;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.ContactSocialMedia .github:hover {
+  color: #2877b5;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0)
+  }
+
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px)
+  }
+
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+  transform: translateY(-15px)
+  }
+}
