@@ -1,6 +1,6 @@
 import React from 'react';
 
-import WearingNative from '../../assets/NativeWaistecoatBowTie.jpg';
+import WearingNative from '../../assets/NativeWaisteCoatBowTie.png';
 
 export default function AboutDetails() {
   return (
