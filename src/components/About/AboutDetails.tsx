@@ -1,6 +1,7 @@
 import React from 'react';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
-import WearingNative from '../../assets/NativeWaistecoatBowTie.jpg';
+import WearingNative from '../../assets/NativeWaisteCoatBowTie.png';
 
 export default function AboutDetails() {
   return (
@@ -18,6 +19,7 @@ export default function AboutDetails() {
           <button className="AboutDetailsActionResume">Resume</button>
         </div>
       </div>
+      <GiHamburgerMenu />
     </div>
   )
 }

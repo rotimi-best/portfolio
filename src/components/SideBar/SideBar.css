@@ -3,7 +3,7 @@
   height: 100%;
   position: fixed;
   float: left;
-  padding: 20px 0 10px 40px;
+  padding: 20px 0 40px 40px;
   background-color: #4b20ff;
   color: #fff;
   display: flex;
@@ -19,6 +19,7 @@
 .Header {
   display: flex;
   align-items: center;
+  width: 80%;
 }
 
 .Header p {
@@ -79,44 +80,76 @@
 
 .ContactSocialMedia .linkedin:hover {
   color: #2877b5;
-  animation-name: bounce;
-  -moz-animation-name: bounce;
+  /* animation-name: bounce;
+  -moz-animation-name: bounce; */
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
 }
 
 .ContactSocialMedia .facebook:hover {
-  color: #2877b5;
-  animation-name: bounce;
-  -moz-animation-name: bounce;
+  color: #186aa8;
+  /* animation-name: bounce;
+  -moz-animation-name: bounce; */
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
 }
 
 .ContactSocialMedia .twitter:hover {
-  color: #2877b5;
-  animation-name: bounce;
-  -moz-animation-name: bounce;
+  color: #0191ff;
+  /* animation-name: bounce;
+  -moz-animation-name: bounce; */
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
 }
 
 .ContactSocialMedia .github:hover {
-  color: #2877b5;
-  animation-name: bounce;
-  -moz-animation-name: bounce;
+  color: #000;
+  /* animation-name: bounce;
+  -moz-animation-name: bounce; */
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
 }
 
 @keyframes bounce {
-  0%, 100%, 20%, 50%, 80% {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
-    transform: translateY(0)
+    transform: translateY(0);
   }
 
   40% {
     -webkit-transform: translateY(-30px);
     -ms-transform: translateY(-30px);
-    transform: translateY(-30px)
+    transform: translateY(-30px);
   }
 
   60% {
     -webkit-transform: translateY(-15px);
     -ms-transform: translateY(-15px);
-  transform: translateY(-15px)
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
   }
 }
