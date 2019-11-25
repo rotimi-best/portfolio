@@ -4,10 +4,10 @@ import AboutDetails from './AboutDetails';
 import './About.css';
 
 export default function About() {
-  return (
-    <div className="About">
-      <SideBar extendWidth={true} />
-      <AboutDetails />
-    </div>
-  )
+    return (
+        <div className="About">
+            <SideBar extendWidth={true} />
+            <AboutDetails />
+        </div>
+    )
 }
