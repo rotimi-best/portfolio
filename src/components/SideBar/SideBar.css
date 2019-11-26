@@ -11,10 +11,6 @@
   justify-content: space-between;
 }
 
-.ExtendWidth {
-  width: 400px;
-}
-
 /* =======================HEADER======================= */
 .Header {
   display: flex;

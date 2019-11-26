@@ -1,9 +1,15 @@
 import React from 'react'
+import About from './About';
+import SideBar from './SideBar';
 
 export default function Main() {
   return (
-    <div>
-      Main Box
-    </div>
+    <>
+      <SideBar />
+      <About />
+      {/* <About />
+      <About />
+      <About /> */}
+    </>
   )
 }

@@ -2,18 +2,12 @@ import React from 'react';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
-import './SideBar.css'
+import './SideBar.css';
 import logo from '../../assets/logo-white.png';
 
-type Props = {
-  extendWidth: Boolean
-}
-
-export default function SideBar(props: Props) {
-  const rootClassName = props.extendWidth ? "SideBar ExtendWidth" : "SideBar"
-
+export default function SideBar() {
   return (
-    <div className={rootClassName}>
+    <div className="SideBar">
       <div className="Header">
         <img src={logo} alt="logo" />
         <p>Rotimi <span>Best</span></p>
