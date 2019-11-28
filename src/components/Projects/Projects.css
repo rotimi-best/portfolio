@@ -1,0 +1,21 @@
+.ProjectsRoot {
+  margin-left: 20%;
+  width: 80%;
+}
+
+.Projects {
+  display: grid;
+  margin: 0 20px;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  /* min-height: 100vh; */
+}
+
+.ProjectsTitle {
+  font-size: 50px;
+}
+
+.Project {
+  height: 305px;
+  margin: 10px;
+  border: 1px solid grey;
+}
