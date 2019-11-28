@@ -10,6 +10,7 @@ export default function AboutDetails() {
         <div className="AboutDetailsImage">
           <img src={WearingNative} alt="AboutDetailsImage"/>
         </div>
+        <span className="HorizontalLine"></span>
         <div className="AboutDetailsText">
           <p className="AboutDetailsFirstName">Rotimi</p>
           <p className="AboutDetailsLastName">Best</p>

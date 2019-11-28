@@ -32,6 +32,15 @@
   border-radius: 50px;
 }
 
+.HorizontalLine {
+  width: 150px;
+  height: 3px;
+  background-color: #4b20ff;
+  position: relative;
+  bottom: 86px;
+  right: 14%;
+}
+
 .AboutDetailsText {
   display: flex;
   flex-direction: column;
