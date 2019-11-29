@@ -5,17 +5,81 @@
 
 .Projects {
   display: grid;
-  margin: 0 20px;
-  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-  /* min-height: 100vh; */
+  margin: 0 50px;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 
 .ProjectsTitle {
   font-size: 50px;
+  margin-left: 50px;
 }
 
 .Project {
-  height: 305px;
-  margin: 10px;
-  border: 1px solid grey;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.Project:hover {
+  transform: scale(0.9);
+}
+
+.Project .ProjectOverlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.Project:hover .ProjectOverlay{
+  opacity: 1;
+}
+
+.ProjectImage {
+  width: 100%;
+}
+
+.ProjectDetails {
+  position: absolute;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.Project:hover .ProjectDetails {
+  top: 80%;
+  left: 50%;
+  opacity: 1;
+}
+
+.FadeInBottom {
+  top: 100%;
+}
+
+.ProjectName,
+.ProjectTechStack,
+.ArrowRight {
+  color: white;
 }
