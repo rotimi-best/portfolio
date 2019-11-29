@@ -1,45 +1,44 @@
 import React, { Component } from 'react'
 import Project from './Project'
+import ProjectType from './Types'
 
 import './Projects.css'
 
-type Project = {
-  key: number,
-  name: string,
-  techStack: string,
-  imageSrc: string,
-}
-
-const projects: Project[] = [
+const projects: ProjectType[] = [
   {
     key: 1,
-    name: 'Linkedin Automation Tool',
-    techStack: 'Node.js, MongoDB',
-    imageSrc: 'https://os-system.com/vendors/images/main-portfolio/enjoy/Enjoy_2.jpg',
+    name: 'Dream interpreter',
+    techStack: 'Node.js, MongoDB, Telegra BOT',
+    image: 'https://os-system.com/vendors/images/main-portfolio/enjoy/Enjoy_2.jpg',
+    src: 'https://os-system.com/vendors/images/main-portfolio/enjoy/Enjoy_2.jpg',
   },
   {
     key: 2,
-    name: 'Linkedin Automation Tool',
-    techStack: 'Node.js, MongoDB',
-    imageSrc: 'https://os-system.com/vendors/images/main-portfolio/illich-realty/phone-section.png',
+    name: 'Fandflovefoundation',
+    techStack: 'Wordpress, PHP, SQL',
+    image: 'https://os-system.com/vendors/images/main-portfolio/illich-realty/phone-section.png',
+    src: 'https://os-system.com/vendors/images/main-portfolio/illich-realty/phone-section.png',
   },
   {
     key: 3,
-    name: 'Linkedin Automation Tool',
-    techStack: 'Node.js, MongoDB',
-    imageSrc: 'https://os-system.com/vendors/images/main-portfolio/illich-realty/solution-picture.png',
+    name: 'Online supermarket for Retailer.com',
+    techStack: 'React.js, Node.js, MySQL',
+    image: 'https://os-system.com/vendors/images/main-portfolio/illich-realty/solution-picture.png',
+    src: 'https://os-system.com/vendors/images/main-portfolio/illich-realty/solution-picture.png',
   },
   {
     key: 4,
     name: 'Linkedin Automation Tool',
-    techStack: 'Node.js, MongoDB',
-    imageSrc: 'https://os-system.com/vendors/images/main-portfolio/gud-job/section_3_1.png',
+    techStack: 'Node.js, MongoDB, Puppeteer',
+    image: 'https://os-system.com/vendors/images/main-portfolio/gud-job/section_3_1.png',
+    src: 'https://os-system.com/vendors/images/main-portfolio/gud-job/section_3_1.png',
   },
   {
     key: 5,
-    name: 'Linkedin Automation Tool',
-    techStack: 'Node.js, MongoDB',
-    imageSrc: 'https://os-system.com/vendors/images/main-portfolio/wikigrads/picture2.png?v2',
+    name: 'Upwork data visualizer',
+    techStack: 'Vue.js, Golang, RethinkDB',
+    image: 'https://os-system.com/vendors/images/main-portfolio/wikigrads/picture2.png?v2',
+    src: 'https://os-system.com/vendors/images/main-portfolio/wikigrads/picture2.png?v2',
   },
 ]
 
@@ -50,12 +49,13 @@ export default class Projects extends Component {
       <div className="ProjectsRoot">
         <h1 className="ProjectsTitle">LATEST WORKS</h1>
         <div className="Projects">
-          {projects.map(({key, name, techStack, imageSrc}) => (
+          {projects.map(({key, name, techStack, image, src }) => (
             <Project
               key={key}
               name={name}
               techStack={techStack}
-              imageSrc={imageSrc}
+              image={image}
+              src={src}
             />
           ))}
         </div>

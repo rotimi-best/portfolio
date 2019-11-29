@@ -1,17 +1,19 @@
 .ProjectsRoot {
   margin-left: 20%;
+  margin-bottom: 50px;
   width: 80%;
 }
 
 .Projects {
   display: grid;
   margin: 0 50px;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-gap: 1rem;
 }
 
 .ProjectsTitle {
   font-size: 50px;
-  margin-left: 50px;
+  margin: 10px 0 50px 50px;
 }
 
 .Project {
@@ -23,10 +25,14 @@
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
+  border: 1px solid #dde4ea;
+  min-height: 388px;
+  border-radius: 10px;
 }
 
 .Project:hover {
   transform: scale(0.9);
+  border-radius: 30px;
 }
 
 .Project .ProjectOverlay {
@@ -69,7 +75,7 @@
 }
 
 .Project:hover .ProjectDetails {
-  top: 80%;
+  top: 60%;
   left: 50%;
   opacity: 1;
 }
@@ -82,4 +88,15 @@
 .ProjectTechStack,
 .ArrowRight {
   color: white;
+}
+
+.ProjectName {
+  font-size: 2rem;
+  margin-top: 20%;
+}
+
+.ArrowRight {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 2rem;
 }
