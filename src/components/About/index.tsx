@@ -4,8 +4,8 @@ import './About.css';
 
 export default function About() {
     return (
-        <div className="About">
+        <section className="AboutContainer">
             <AboutDetails />
-        </div>
+        </section>
     )
 }

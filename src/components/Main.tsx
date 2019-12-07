@@ -1,7 +1,8 @@
 import React from 'react'
 import SideBar from './SideBar';
-import Projects from './Projects';
 import About from './About';
+import Projects from './Projects';
+import Contact from './Contact';
 
 export default function Main() {
   return (
@@ -9,8 +10,7 @@ export default function Main() {
       <SideBar />
       <About />
       <Projects />
-      {/* <About />
-      <About /> */}
+      <Contact />
     </>
   )
 }
