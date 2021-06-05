@@ -5,10 +5,8 @@
 }
 
 .Projects {
-  display: grid;
-  margin: 0 50px;
-  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-  grid-gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .ProjectsTitle {
@@ -17,86 +15,89 @@
 }
 
 .Project {
-  position: relative;
+  border: 1px solid #eaecef;
+  width: 350px;
+  margin: 20px;
+}
+
+.Project div {
   width: 100%;
-  margin: 0;
-  padding: 0;
+}
+
+.Project .ProjectHeader img {
+  width: 100%;
+}
+
+.Project .ProjectBody {
+  padding: 10px;
+}
+
+.Project .ProjectBody .ProjectName {
+  height: 42px;
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Project .ProjectBody .ProjectName a {
+  border-color: #423F3F;
+  color: #423F3F;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  background: transparent;
+  border: none;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 3px;
+  text-align: center;
+  outline: none;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 250ms cubic-bezier(0.1, 0.1, 0, 1);
+}
+
+.Project .ProjectBody .ProjectName a:hover {
+  background-color: #423F3F;
+  color: #fff;
+}
+
+.Project .ProjectBody .ProjectName a .ArrowRight {
+  margin-left: 5px;
+}
+
+.Project .ProjectBody p {
+  font-weight: bold;
+}
+
+.Project .ProjectFooter {
+  border-top: 1px solid #eaecef;
+  padding: 10px;
+}
+
+.Project .ProjectFooter span {
   overflow: hidden;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
-  border: 1px solid #dde4ea;
-  min-height: 388px;
-  border-radius: 10px;
-}
-
-.Project:hover {
-  transform: scale(0.9);
-  border-radius: 30px;
-}
-
-.Project .ProjectOverlay {
-  background: rgba(0,0,0,0.7);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
-}
-
-.Project:hover .ProjectOverlay{
-  opacity: 1;
-}
-
-.ProjectImage {
-  width: 100%;
-}
-
-.ProjectDetails {
-  position: absolute;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.Project:hover .ProjectDetails {
-  top: 60%;
-  left: 50%;
-  opacity: 1;
-}
-
-.FadeInBottom {
-  top: 100%;
-}
-
-.ProjectName,
-.ProjectTechStack,
-.ArrowRight {
-  color: white;
-}
-
-.ProjectName {
-  font-size: 2rem;
-  margin-top: 20%;
-}
-
-.ArrowRight {
-  margin: 0 auto;
-  width: 100%;
-  font-size: 2rem;
+  white-space: nowrap;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-overflow: ellipsis;
+  color: rgba(0, 0, 0, 0.87);
+  border: none;
+  cursor: default;
+  height: 32px;
+  display: inline-flex;
+  outline: 0;
+  font-size: 0.8125rem;
+  box-sizing: border-box;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  border-radius: 16px;
+  vertical-align: middle;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #e0e0e0;
+  margin-right: 5px;
 }

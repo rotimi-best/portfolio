@@ -1,7 +1,7 @@
 type Project = {
   key: number,
   name: string,
-  techStack: string,
+  techStacks: string[],
   image: string,
   src: string,
 }
