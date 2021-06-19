@@ -20,10 +20,9 @@ export default function AboutDetails() {
           </div>
           <p className="AboutDetailsShortDescription">Building the future</p>
           <p className="AboutDetailsLongDescription">
-            I have a day job as a software engineer and on the side
-            I am working on a software for universities, that gives students easy access
-            to all the information they need to succeed and teachers the data and
-            tools to take charge of their classrooms.
+            <p> - Working as a software engineer</p>
+            <p> - Building <a href="https://www.classroomio.com/" target="_blank" rel="noopener noreferrer">ClassroomIO</a> on the side</p>
+            <p> - Teaching React.js to new developers</p>
           </p>
           <div className="AboutDetailsAction">
             {/* <button className="AboutDetailsActionPortfolio">RESUME</button> */}
