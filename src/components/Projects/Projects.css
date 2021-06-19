@@ -26,6 +26,7 @@
 
 .Project .ProjectHeader img {
   width: 100%;
+  border: 1px solid;
 }
 
 .Project .ProjectBody {
@@ -100,4 +101,23 @@
   text-decoration: none;
   background-color: #e0e0e0;
   margin-right: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .ProjectsContainer {
+    margin-left: 0;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .Project {
+    max-width: 90%;
+    margin: 10px auto;
+  }
+
+  .Project .ProjectBody p {
+    margin-right: 5px;
+    word-wrap: break-word;
+    width: 60%;
+  }
 }

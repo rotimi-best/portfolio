@@ -2,25 +2,26 @@ import React from 'react';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
+import SideBarType from './Types';
 import './SideBar.css';
 import logo from '../../assets/logo-white.png';
 
-export default function SideBar() {
+export default function SideBar(props: SideBarType) {
   return (
-    <div className="SideBar">
+    <div className={`SideBar ${props.isFooter && 'SideBarFooter'}`}>
       <div className="Header">
         <img src={logo} alt="logo" />
         <p>Rotimi <span>Best</span></p>
       </div>
       <div className="Footer">
-        <div className="Contact">
+        {/* <div className="Contact">
           <p className="ContactTitle">Email</p>
           <p className="ContactInfo">test@gmail.com</p>
         </div>
         <div className="Contact">
           <p className="ContactTitle">Phone</p>
           <p className="ContactInfo">0909486040</p>
-        </div>
+        </div> */}
         <div className="Contact">
           <p className="ContactTitle">Find me on</p>
           <div className="ContactSocialMedia">

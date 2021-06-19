@@ -75,10 +75,10 @@
   margin: 25px 0;
 }
 
-.AboutDetailsAction {
+/* .AboutDetailsAction {
   display: flex;
   justify-content: space-evenly;
-}
+} */
 
 .AboutDetailsAction button{
   cursor: pointer;
@@ -109,14 +109,33 @@
   background-color: white;
   border: 2px solid black;
 }
+
+.AboutDetailsActionResume a {
+  color: #000;
+  text-decoration: none;
+}
+
 .AboutDetailsActionResume:hover,
 .AboutDetailsActionResume:focus {
-  color: #4b20ff;
-  background-color: white;
+  background-color: #4b20ff;
   border: 2px solid #4b20ff;
 }
 
+.AboutDetailsActionResume:hover a,
+.AboutDetailsActionResume:focus a {
+  color: #fff;
+}
+
 @media only screen and (max-width: 1200px) {
+  .AboutContainer {
+    height: fit-content;
+  }
+
+  .AboutDetails {
+    height: unset;
+    margin-bottom: 50px;
+  }
+
   .AboutDetailsImage img {
     flex-direction: column;
     width: 168px;
@@ -127,6 +146,7 @@
 
   .AboutDetailsText {
     align-items: center;
+    width: 90%;
   }
 
   .AboutDetailsTextName {
@@ -149,7 +169,7 @@
   .AboutDetailsLeft {
     width: 100%;
     flex-direction: column;
-    left: 130px;
+    position: static;
   }
 
   .large {

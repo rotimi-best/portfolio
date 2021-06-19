@@ -7,10 +7,11 @@ import Projects from './Projects';
 export default function Main() {
   return (
     <React.Fragment>
-      <SideBar />
+      <SideBar isFooter={false} />
       <About />
       <Projects />
       {/* <Contact /> */}
+      <SideBar isFooter={true} />
     </React.Fragment>
   );
 }

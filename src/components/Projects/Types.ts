@@ -4,6 +4,7 @@ type Project = {
   techStacks: string[],
   image: string,
   src: string,
+  description: string,
 }
 
 export default Project

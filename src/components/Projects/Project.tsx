@@ -16,7 +16,7 @@ export default function Project(props: ProjectType) {
           </a>
         </div>
         <span>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, temporibus cumque repellendus facilis quia harum optio consectetur vero enim dicta eius.
+          {props.description}
         </span>
       </div>
       <div className="ProjectFooter">
