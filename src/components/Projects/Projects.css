@@ -27,6 +27,7 @@
 .Project .ProjectHeader img {
   width: 100%;
   border: 1px solid;
+  height: 223px;
 }
 
 .Project .ProjectBody {
